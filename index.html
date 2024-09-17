@@ -1,11 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SaaS Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
-<body>
-    
+
+<body class="bg-[url(https://i.pinimg.com/236x/21/1e/75/211e756ba9cdbf62b38264964a76aabc.jpg)] bg-no-repeat">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-lg">
+        <div class="w-full mx-auto py-4 px-10 flex justify-between items-center">
+            <div class="text-2xl font-bold text-purple-600">CODBE</div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 text-gray-600">
+                    <li><a href="#" class="hover:text-purple-600">All Demo</a></li>
+                    <li><a href="#" class="hover:text-purple-600">About us</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Pages</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+                    <li><a href="#" class="hover:text-purple-600">Contact us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-full hidden md:block">Try It Free</a>
+            <i class="ri-menu-2-line sm:hidden text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-100 to-blue-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold text-purple-800">Unlock your software potential with CodBe platform</h1>
+            <p class="text-gray-600 mt-4">The world's simplest and fastest platform that brings everything together</p>
+            <a href="#" class="mt-6 inline-block bg-orange-500 text-white px-6 py-3 rounded-full">Watch Video</a>
+
+            <!-- Mockup image section -->
+            <div class="mt-10">
+                <img src="https://i.pinimg.com/564x/3d/fb/0b/3dfb0b15939b61d301c4f419e9e9394b.jpg" alt="Dashboard Screenshot" class="object-cover rounded-lg shadow-lg mx-auto">
+            </div>
+        </div>
+    </section>
+
+   <!-- Selection Section -->
+<section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">What will you be using CodBe for?</h2>
+        <p class="text-gray-600 mb-8">We'll use this to recommend tools and templates specifically for you.</p>
+
+        <!-- Option Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Option 1: Teacher -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/40" alt="Teacher Icon" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-700">Teacher</h3>
+                <p class="text-gray-600 mt-2">You're here to empower your students.</p>
+            </div>
+
+            <!-- Option 2: Student -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/40" alt="Student Icon" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-700">Student</h3>
+                <p class="text-gray-600 mt-2">You're here to impress your teachers and classmates.</p>
+            </div>
+
+            <!-- Option 3: Personal -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/40" alt="Personal Icon" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-700">Personal</h3>
+                <p class="text-gray-600 mt-2">You're here to make anything and everything.</p>
+            </div>
+
+            <!-- Option 4: Small Business -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/40" alt="Small Business Icon" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-700">Small Business</h3>
+                <p class="text-gray-600 mt-2">You're here to design your brand from the ground up.</p>
+            </div>
+
+            <!-- Option 5: Large Company -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/40" alt="Large Company Icon" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-700">Large Company</h3>
+                <p class="text-gray-600 mt-2">You're here to scale your brand and keep it consistent.</p>
+            </div>
+
+            <!-- Option 6: Non-profit or Charity -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/40" alt="Non-profit Icon" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-700">Non-profit or Charity</h3>
+                <p class="text-gray-600 mt-2">You're here to design for the greater good.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Pricing Section -->
+<section class="py-12 bg-purple-100">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
+        <p class="text-gray-600 mb-8">Sign up in less than 30 seconds. Try out our 7-day risk-free trial. Upgrade at any time, no questions, no hassle.</p>
+
+        <!-- Pricing Plans -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Free Plan -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-700">Free</h3>
+                <p class="text-4xl font-bold mt-4">$0 <span class="text-lg text-gray-600">/mo</span></p>
+                <ul class="mt-6 space-y-4 text-left">
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Up to 100 emails per day</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Unlimited contacts</span>
+                    </li>
+                </ul>
+                <button class="mt-6 bg-purple-500 text-white py-2 px-4 rounded-full">Sign up</button>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="bg-white rounded-lg shadow-lg p-6 border-4 border-purple-600">
+                <h3 class="text-xl font-semibold text-gray-700">Standard</h3>
+                <p class="text-4xl font-bold mt-4">$99 <span class="text-lg text-gray-600">/mo</span></p>
+                <ul class="mt-6 space-y-4 text-left">
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Up to 100,000 emails per day</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>No daily limits</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Email support</span>
+                    </li>
+                </ul>
+                <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-full">Sign up</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-700">Enterprise</h3>
+                <p class="text-4xl font-bold mt-4">$399 <span class="text-lg text-gray-600">/mo</span></p>
+                <ul class="mt-6 space-y-4 text-left">
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Up to 1,000,000 emails per day</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Marketing automation</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Landing pages</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <span class="text-purple-600">✔</span>
+                        <span>Telephone support</span>
+                    </li>
+                </ul>
+                <button class="mt-6 bg-purple-500 text-white py-2 px-4 rounded-full">Sign up</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Analyze Your Data Section -->
+    <section class="py-12 bg-gradient-to-r from-purple-100 to-blue-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Analyze your data with powerful tools</h2>
+                    <p class="text-gray-600 mt-4">Unlock the true potential of your data with CodBe, the ultimate data analysis powerhouse.</p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-start space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Carefully designed tools for maximum productivity.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Seamless sync across all your devices and platforms.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/400x300" alt="Graph Image" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborate Section -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Collaborate securely on everything</h2>
+            <p class="text-gray-600 mt-4">Whether you're working on a top-secret project or simply sharing files, CodBe ensures that your data remains confidential and secure.</p>
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-left">
+                    <h3 class="text-lg font-bold text-gray-700">Sync followers</h3>
+                    <p class="text-gray-600 mt-2">Manage and sync all your followers easily from one place.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-left">
+                    <h3 class="text-lg font-bold text-gray-700">Secure data storage</h3>
+                    <p class="text-gray-600 mt-2">Ensure your data is safe and secure with our end-to-end encryption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-600">© 2024 CodBe Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
