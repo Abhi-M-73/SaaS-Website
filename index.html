@@ -7,180 +7,154 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SaaS Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<body class="bg-[url(https://i.pinimg.com/236x/21/1e/75/211e756ba9cdbf62b38264964a76aabc.jpg)] bg-no-repeat">
-
+<body class="t" data-aos="fade-up" data-aos-duration="1000">
+    
     <!-- Navbar -->
-    <header class="bg-white shadow-lg">
+    <header class="bg-[#333] shadow-lg sticky top-0 absolute z-40 w-full " data-aos="fade-down" data-aos-duration="1000" >
         <div class="w-full mx-auto py-4 px-10 flex justify-between items-center">
             <div class="text-2xl font-bold text-purple-600">CODBE</div>
             <nav class="hidden md:block">
-                <ul class="flex space-x-6 text-gray-600">
-                    <li><a href="#" class="hover:text-purple-600">All Demo</a></li>
-                    <li><a href="#" class="hover:text-purple-600">About us</a></li>
-                    <li><a href="#" class="hover:text-purple-600">Pages</a></li>
-                    <li><a href="#" class="hover:text-purple-600">Blog</a></li>
-                    <li><a href="#" class="hover:text-purple-600">Contact us</a></li>
+                <ul class="flex space-x-6 text-white">
+                    <li><a href="#home" class="hover:text-purple-600">Home</a></li>
+                    <li><a href="#tools" class="hover:text-purple-600">Tools</a></li>
+                    <li><a href="#pricing" class="hover:text-purple-600">Pricing</a></li>
+                    <li><a href="#about" class="hover:text-purple-600">About</a></li>
+                    <li><a href="#info" class="hover:text-purple-600">Information</a></li>
                 </ul>
             </nav>
-            <a href="#" class="bg-orange-500 text-white px-4 py-2 rounded-full hidden md:block">Try It Free</a>
+            <a href="#" class="bg-purple-500 text-white px-4 py-2 rounded-full hidden md:block">Try It Free</a>
             <i class="ri-menu-2-line sm:hidden text-2xl"></i>
         </div>
     </header>
 
+    
+
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-purple-100 to-blue-100 py-16">
+    <section id="home" class="bg-gradient-to-r from-purple-100 to-blue-100 py-16" data-aos="fade-up" data-aos-duration="1000">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h1 class="text-4xl font-bold text-purple-800">Unlock your software potential with CodBe platform</h1>
             <p class="text-gray-600 mt-4">The world's simplest and fastest platform that brings everything together</p>
-            <a href="#" class="mt-6 inline-block bg-orange-500 text-white px-6 py-3 rounded-full">Watch Video</a>
-
-            <!-- Mockup image section -->
-            <div class="mt-10">
+            <a href="#" class="mt-6 inline-block bg-purple-500 text-white px-6 py-3 rounded-full">Watch Video</a>
+            <div class="mt-10" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="https://i.pinimg.com/564x/3d/fb/0b/3dfb0b15939b61d301c4f419e9e9394b.jpg" alt="Dashboard Screenshot" class="object-cover rounded-lg shadow-lg mx-auto">
             </div>
         </div>
     </section>
 
-   <!-- Selection Section -->
-<section class="py-12 bg-white">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">What will you be using CodBe for?</h2>
-        <p class="text-gray-600 mb-8">We'll use this to recommend tools and templates specifically for you.</p>
-
-        <!-- Option Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Option 1: Teacher -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/40" alt="Teacher Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold text-gray-700">Teacher</h3>
-                <p class="text-gray-600 mt-2">You're here to empower your students.</p>
-            </div>
-
-            <!-- Option 2: Student -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/40" alt="Student Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold text-gray-700">Student</h3>
-                <p class="text-gray-600 mt-2">You're here to impress your teachers and classmates.</p>
-            </div>
-
-            <!-- Option 3: Personal -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/40" alt="Personal Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold text-gray-700">Personal</h3>
-                <p class="text-gray-600 mt-2">You're here to make anything and everything.</p>
-            </div>
-
-            <!-- Option 4: Small Business -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/40" alt="Small Business Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold text-gray-700">Small Business</h3>
-                <p class="text-gray-600 mt-2">You're here to design your brand from the ground up.</p>
-            </div>
-
-            <!-- Option 5: Large Company -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/40" alt="Large Company Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold text-gray-700">Large Company</h3>
-                <p class="text-gray-600 mt-2">You're here to scale your brand and keep it consistent.</p>
-            </div>
-
-            <!-- Option 6: Non-profit or Charity -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/40" alt="Non-profit Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold text-gray-700">Non-profit or Charity</h3>
-                <p class="text-gray-600 mt-2">You're here to design for the greater good.</p>
+    <!-- Selection Section -->
+    <section id="tools" class="py-12 bg-white" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">What will you be using CodBe for?</h2>
+            <p class="text-gray-600 mb-8">We'll use this to recommend tools and templates specifically for you.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+                <!-- Option Cards -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="teacher.png" alt="Teacher Icon" class="mx-auto mb-4 object-cover h-52 w-52">
+                    <h3 class="text-xl font-semibold text-gray-700">Teacher</h3>
+                    <p class="text-gray-600 mt-2">You're here to empower your students.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="student.png" alt="Student Icon" class="mx-auto mb-4 object-cover h-52 w-52">
+                    <h3 class="text-xl font-semibold text-gray-700">Student</h3>
+                    <p class="text-gray-600 mt-2">You're here to impress your teachers and classmates.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="personal.png" alt="Personal Icon" class="mx-auto mb-4 object-cover h-52 w-52">
+                    <h3 class="text-xl font-semibold text-gray-700">Personal</h3>
+                    <p class="text-gray-600 mt-2">You're here to make anything and everything.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="business.png" alt="Small Business Icon" class="mx-auto mb-4 object-cover h-52 w-52">
+                    <h3 class="text-xl font-semibold text-gray-700">Small Business</h3>
+                    <p class="text-gray-600 mt-2">You're here to design your brand from the ground up.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="large-company.png" alt="Large Company Icon" class="mx-auto mb-4 object-cover h-52 w-52">
+                    <h3 class="text-xl font-semibold text-gray-700">Large Company</h3>
+                    <p class="text-gray-600 mt-2">You're here to scale your brand and keep it consistent.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="non-profit.png" alt="Non-profit Icon" class="mx-auto mb-4 object-cover h-52 w-52">
+                    <h3 class="text-xl font-semibold text-gray-700">Non-profit or Charity</h3>
+                    <p class="text-gray-600 mt-2">You're here to design for the greater good.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-
+    </section>
 
     <!-- Pricing Section -->
-<section class="py-12 bg-purple-100">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
-        <p class="text-gray-600 mb-8">Sign up in less than 30 seconds. Try out our 7-day risk-free trial. Upgrade at any time, no questions, no hassle.</p>
-
-        <!-- Pricing Plans -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Free Plan -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-semibold text-gray-700">Free</h3>
-                <p class="text-4xl font-bold mt-4">$0 <span class="text-lg text-gray-600">/mo</span></p>
-                <ul class="mt-6 space-y-4 text-left">
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Up to 100 emails per day</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Unlimited contacts</span>
-                    </li>
-                </ul>
-                <button class="mt-6 bg-purple-500 text-white py-2 px-4 rounded-full">Sign up</button>
-            </div>
-
-            <!-- Standard Plan -->
-            <div class="bg-white rounded-lg shadow-lg p-6 border-4 border-purple-600">
-                <h3 class="text-xl font-semibold text-gray-700">Standard</h3>
-                <p class="text-4xl font-bold mt-4">$99 <span class="text-lg text-gray-600">/mo</span></p>
-                <ul class="mt-6 space-y-4 text-left">
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Up to 100,000 emails per day</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>No daily limits</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Email support</span>
-                    </li>
-                </ul>
-                <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-full">Sign up</button>
-            </div>
-
-            <!-- Enterprise Plan -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-semibold text-gray-700">Enterprise</h3>
-                <p class="text-4xl font-bold mt-4">$399 <span class="text-lg text-gray-600">/mo</span></p>
-                <ul class="mt-6 space-y-4 text-left">
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Up to 1,000,000 emails per day</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Marketing automation</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Landing pages</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <span class="text-purple-600">✔</span>
-                        <span>Telephone support</span>
-                    </li>
-                </ul>
-                <button class="mt-6 bg-purple-500 text-white py-2 px-4 rounded-full">Sign up</button>
+    <section id="pricing" class="py-32 bg-purple-100" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
+            <p class="text-gray-600 mb-8">Sign up in less than 30 seconds. Try out our 7-day risk-free trial. Upgrade at any time, no questions, no hassle.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-xl font-semibold text-gray-700">Free</h3>
+                    <p class="text-4xl font-bold mt-4">$0 <span class="text-lg text-gray-600">/mo</span></p>
+                    <ul class="mt-6 space-y-4 text-left">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Up to 100 emails per day</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Unlimited contacts</span>
+                        </li>
+                    </ul>
+                    <button class="mt-6 bg-purple-500 text-white py-2 px-4 rounded-full">Sign up</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-4 border-purple-600" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-xl font-semibold text-gray-700">Standard</h3>
+                    <p class="text-4xl font-bold mt-4">$99 <span class="text-lg text-gray-600">/mo</span></p>
+                    <ul class="mt-6 space-y-4 text-left">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Up to 100,000 emails per day</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>No daily limits</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Email support</span>
+                        </li>
+                    </ul>
+                    <button class="mt-6 bg-purple-600 text-white py-2 px-4 rounded-full">Sign up</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-xl font-semibold text-gray-700">Enterprise</h3>
+                    <p class="text-4xl font-bold mt-4">$399 <span class="text-lg text-gray-600">/mo</span></p>
+                    <ul class="mt-6 space-y-4 text-left">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Up to 1,000,000 emails per day</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Marketing automation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Landing pages</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-purple-600">✔</span>
+                            <span>Telephone support</span>
+                        </li>
+                    </ul>
+                    <button class="mt-6 bg-purple-500 text-white py-2 px-4 rounded-full">Sign up</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
+    </section>
 
     <!-- Analyze Your Data Section -->
-    <section class="py-12 bg-gradient-to-r from-purple-100 to-blue-100">
+    <section id="about" class="py-12 bg-gradient-to-r from-purple-100 to-blue-100" data-aos="fade-up" data-aos-duration="1000">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -198,38 +172,112 @@
                     </ul>
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/400x300" alt="Graph Image" class="rounded-lg shadow-lg">
+                    <img src="https://i.pinimg.com/564x/19/24/81/1924819c8f84e22ccf52775f4db42340.jpg" alt="Graph Image" class="rounded-lg shadow-lg" data-aos="fade-left" data-aos-duration="1000">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Collaborate Section -->
-    <section class="py-12">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-800">Collaborate securely on everything</h2>
-            <p class="text-gray-600 mt-4">Whether you're working on a top-secret project or simply sharing files, CodBe ensures that your data remains confidential and secure.</p>
-
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg text-left">
-                    <h3 class="text-lg font-bold text-gray-700">Sync followers</h3>
-                    <p class="text-gray-600 mt-2">Manage and sync all your followers easily from one place.</p>
+    <section id="info" class="py-16 bg-gray-50" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-800 leading-tight">Collaborate securely on everything</h2>
+            <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Whether you're working on a top-secret project or simply sharing files, CodBe ensures that your data remains confidential and secure.</p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block p-3 bg-blue-500 text-white rounded-full">
+                            <!-- Icon (optional) -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12H7v2h2v-2zm0-6H7v2h2V6zm4 2h-2v2h2V8zm0 4h-2v2h2v-2zM5 8h2v2H5V8zm0 4h2v2H5v-2zM3 4h14v12H3V4zm14-2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-800 ml-4">Sync followers</h3>
+                    </div>
+                    <p class="text-gray-600">Manage and sync all your followers easily from one place.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-left">
-                    <h3 class="text-lg font-bold text-gray-700">Secure data storage</h3>
-                    <p class="text-gray-600 mt-2">Ensure your data is safe and secure with our end-to-end encryption.</p>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block p-3 bg-green-500 text-white rounded-full">
+                            <!-- Icon (optional) -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 13H9v-2h2v2zm0-4H9V7h2v4z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-800 ml-4">Secure data storage</h3>
+                    </div>
+                    <p class="text-gray-600">Ensure your data is safe and secure with our end-to-end encryption.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block p-3 bg-red-500 text-white rounded-full">
+                            <!-- Icon (optional) -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 13H9v-2h2v2zm0-4H9V7h2v4z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-800 ml-4">Real-time collaboration</h3>
+                    </div>
+                    <p class="text-gray-600">Collaborate with your team in real-time with high security.</p>
+                </div>
+
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block p-3 bg-blue-500 text-white rounded-full">
+                            <!-- Icon (optional) -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12H7v2h2v-2zm0-6H7v2h2V6zm4 2h-2v2h2V8zm0 4h-2v2h2v-2zM5 8h2v2H5V8zm0 4h2v2H5v-2zM3 4h14v12H3V4zm14-2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-800 ml-4">Real Automation</h3>
+                    </div>
+                    <p class="text-gray-600">Manage and sync all your followers easily from one place.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block p-3 bg-green-500 text-white rounded-full">
+                            <!-- Icon (optional) -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 13H9v-2h2v2zm0-4H9V7h2v4z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-800 ml-4">Secure Cloud Servar</h3>
+                    </div>
+                    <p class="text-gray-600">Ensure your data is safe and secure with our end-to-end encryption.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block p-3 bg-red-500 text-white rounded-full">
+                            <!-- Icon (optional) -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 13H9v-2h2v2zm0-4H9V7h2v4z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-800 ml-4">Real-time Optimization</h3>
+                    </div>
+                    <p class="text-gray-600">Collaborate with your team in real-time with high security.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white py-6">
+    <footer class="bg-[#333] py-6" >
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-600">© 2024 CodBe Platform. All rights reserved.</p>
+            <p class="text-white">© 2024 CodBe Platform. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
